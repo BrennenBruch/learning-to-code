@@ -7,12 +7,11 @@ print(guests)
 guests.pop()
 print(guests)
 
-for guest in guests:
-    print(f"{guest.title()} is here!")
+nums = [2,7,11,15]
+target = 9
 
-guests_dict = {"name": "andy", "age": 20, "job": "cook",
-               "name": "bob", "age": 22, "job": "officer",
-               "name": "carl", "age": 30, "job": "writer",}
-
-for guest in guests_dict:
-   print(f"{guests_dict["name"]} is here! they are {guests_dict["age"]}! and they are a {guests_dict["job"]}!")
+def twoSum(self, nums, target):
+    for i in range(nums.size()):
+        smaller_than = []
+        if nums[i] <= target:
+            smaller_than.append(nums[i])
